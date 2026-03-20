@@ -35,12 +35,19 @@ class miHeader extends HTMLElement {
 				background-color: #1E1E1E;
 				color: var(--whiteDarkTheme);
 			}
+			
+			h1 a, a.active{
+				text-decoration: none;
+				color: black;
+				background-color: transparent;
+			}
 		</style>
 		
 		<header>
-			<h1 style="font-size: 40px;">REMS</h1>
+			<div class="cabecera">
+				<h1 style="font-size: 40px;"><a href="index.html">REMS</a></h1>
+			</div>
 			<nav class="menu">
-				
 				<ul>
 					<li><a href="index.html">RFLATHEADPHONES</a></li>
 					<li><a href="RDistortion.html">RDISTORTION</a></li>

@@ -20,6 +20,9 @@
     /* text-align: justify; */
 /* } */
 
+small {
+  font-size: 0.7em;
+}
 
 html{
 	/* margin: 0; */
@@ -129,6 +132,15 @@ li a:hover {
 	width: 100%;
     /* position: fixed; */
     top: 0;
+	
+	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+	
+	min-height: 80px;
+	/* min-height: 2em; */
+	/* min-height: 20%; */
+	
+	
     /* background-color: #ff0062; */
     /*box-shadow: 5px 5px 11px black;*/
 	

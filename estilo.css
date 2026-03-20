@@ -159,6 +159,9 @@ li a:hover {
     text-align: right;
     /* margin: auto; */
     /* color: #ff0062;    */
+	font-size: 0.9em;
+	background-color: #111;
+	padding: 2px;
 }
 
 .icono{

@@ -11,15 +11,17 @@ main{
 body{
     background-color: #1E1E1E;
     /*position: relative;*/
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 140px;
+
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    /* padding-top: 140px; */
+	padding-top: 0;
 }
 
-h1{
-    position: relative;
-    top: 0;
-}
+/* h1{ */
+    /* position: relative; */
+    /* top: 0; */
+/* } */
 
 center > a{
     text-decoration: none;
@@ -75,11 +77,17 @@ li a:hover {
 }
 
 .cabecera{
-    width: 80%;
-    position: fixed;
+    width: 100%;
+    /* position: fixed; */
     top: 0;
-    background-color: #ff0062;
+    /* background-color: #ff0062; */
     /*box-shadow: 5px 5px 11px black;*/
+	
+	/* de aquí: https://www.magicpattern.design/tools/css-backgrounds */
+	background-color: #ff0062;
+	opacity: 1;
+	background: radial-gradient(circle, transparent 20%, #ff0062 20%, #ff0062 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ff0062 20%, #ff0062 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#000000 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #000000 2px, #ff0062 2px) -1px 0;
+	background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .pie{
@@ -109,10 +117,6 @@ li a:hover {
 .menu{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,94,1) 100%);
-}
-
-.rems{
-    font-size: 40px;
 }
 
 .active {

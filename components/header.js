@@ -1,65 +1,67 @@
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `
-      <style>
-        ul {
-		list-style-type: none;
-		
-		padding: 0;
-		overflow: hidden;
-		font-weight: bold;
-		width: max-content;
-		margin: auto;
-	}
-	  
-	li {
-		float: left;
-	}
-	  
-	li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
+	constructor() {
+		super();
 	}
 
-	li a:hover {
-		background-color: #111;
-	}
+	connectedCallback() {
+		this.innerHTML = `
+		<style>
+			ul {
+				list-style-type: none;
+				padding: 0;
+				overflow: hidden;
+				font-weight: bold;
+				width: max-content;
+				margin: auto;
+			}
 	
-	li a.active {
-          background-color: #1E1E1E;
-        }
-      </style>
-      <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">PLUGINS</a></li>
-            <li><a href="work.html">NADA AÚN</a></li>
-            <li><a href="contact.html">NADA AÚN</a></li>
-          </ul>
-        </nav>
-      </header>
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			li a:hover {
+				background-color: #111;
+			}
+	
+			li a.active {
+				background-color: #1E1E1E;
+			}
+		</style>
+		
+		<header>
+			<h1 style="font-size: 40px;">REMS</h1>
+			<nav class="menu">
+				
+				<ul>
+					<li><a href="index.html">PLUGINS</a></li>
+					<li><a href="work.html">NADA AÚN</a></li>
+					<li><a href="contact.html">NADA AÚN</a></li>
+				</ul>
+			</nav>
+		</header>
     `;
 	
 	
-	// Add this part
-    const links = this.querySelectorAll("a");
-    const currentPage = window.location.pathname.split("/").pop();
+	// Para 'active
+	const links = this.querySelectorAll("a"); //obtiene listado de elementos <a> (links) dentro de componente
+	const currentPage = window.location.pathname.split("/").pop();
 
-    links.forEach(link => {
-      const linkPage = link.getAttribute("href");
+	links.forEach(link => {
+		const linkPage = link.getAttribute("href");
 
-      if (linkPage === currentPage) {
-        link.classList.add("active");
-      }
-    });
-  }
+		if (linkPage === currentPage) {
+			link.classList.add("active");
+		}
+	});
+	}
 }
 
 customElements.define('header-component', Header);

@@ -15,7 +15,7 @@ class miFooter extends HTMLElement {
 					♪ ... The tears trickle down wet the earth. Gotta get out now. From the Chamomile bathroom, tonight... ♪
 				</span>
 				
-				</br>
+				<br>
 				
 				<span style="color:gray;">
 					Victor Morante | Lima, Perú | victormorante28@gmail.com

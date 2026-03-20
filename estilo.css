@@ -72,9 +72,6 @@ li a:hover {
     background-color: #1E1E1E;
 }
 
-.letra_musica{
-    color:white;
-}
 
 .cabecera{
     width: 100%;
@@ -91,13 +88,13 @@ li a:hover {
 }
 
 .pie{
-    width: 80%;
+    width: 100%;
     /*position: fixed;*/
     bottom: 0;
-    background-color: #1E1E1E;
-    text-align: center;
-    margin: auto;
-    color: #ff0062;   
+    /* background-color: #1E1E1E; */
+    text-align: right;
+    /* margin: auto; */
+    /* color: #ff0062;    */
 }
 
 .icono{

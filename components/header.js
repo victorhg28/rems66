@@ -21,7 +21,7 @@ class miHeader extends HTMLElement {
 
 			li a {
 				display: block;
-				color: white;
+				color: #111;
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
@@ -33,6 +33,7 @@ class miHeader extends HTMLElement {
 	
 			li a.active {
 				background-color: #1E1E1E;
+				color: var(--whiteDarkTheme);
 			}
 		</style>
 		

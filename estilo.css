@@ -161,7 +161,8 @@ li a:hover {
     /* color: #ff0062;    */
 	font-size: 0.9em;
 	background-color: #111;
-	padding: 2px;
+	/* padding: 2px; */
+	padding: 2px 15px 2px 0; /* top right bottom left */
 }
 
 .icono{

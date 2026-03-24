@@ -4,6 +4,23 @@
   --bordeColor: black;
   --bordeSize: 1px;
   --whiteDarkTheme: #AAA;
+  --rosado: #ff0062;
+}
+
+/* css pattern from here https://projects.verou.me/css3patterns/#tartan */
+.home_bg{
+	/* margin-top: 0px; */
+	/* margin-bottom: 0px; */
+	width: 100%;
+	
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	/* background-size:16px 16px; */
+	background-size:8px 8px;
 }
 
 *{
@@ -26,7 +43,10 @@ small {
 
 html{
 	/* margin: 0; */
-	margin: 1vh;
+	/* margin: 1vh; */
+	/* margin-top: 1vh; */
+	/* margin-right: 1vh; */
+	/* margin-left: 1vh; */
 }
 
 body{
@@ -43,7 +63,9 @@ body{
 	/* margin: 1em; */
 	/* margin-top: 0; */
 	min-height: 99vh;
-	margin: 0;
+	margin-top:1vh;
+	margin-bottom:0;
+	/* margin: 0; */
 	display: flex;
 	flex-direction: column;
 	
@@ -64,14 +86,20 @@ main {
 }
 
 
-footer {
-	min-height: 50px;
-}
-
 /* h1{ */
     /* position: relative; */
     /* top: 0; */
 /* } */
+footer{
+	background-color: #111;
+	font-size: 0.9em;
+	bottom: 0;
+	/* min-height: 80px; */
+	/* min-height: 80%; */
+	text-align: right;
+	/* margin-bottom: 0; */
+	/* overflow: hidden; */
+}
 
 center > a{
     text-decoration: none;
@@ -156,13 +184,18 @@ li a:hover {
     /*position: fixed;*/
     bottom: 0;
     /* background-color: #1E1E1E; */
+	
     text-align: right;
+	
     /* margin: auto; */
     /* color: #ff0062;    */
-	font-size: 0.9em;
+	font-size: 0.8em;
 	background-color: #111;
-	/* padding: 2px; */
-	padding: 2px 15px 2px 2px; /* top right bottom left */
+	
+	padding: 2px 15px 2px 2px; /* top right bottom left */ 
+	/* padding-left: 10%; */
+    /* padding-right: 10%; */
+	min-height: 80px;
 }
 
 .icono{

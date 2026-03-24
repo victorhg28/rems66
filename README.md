@@ -2,4 +2,4 @@
 https://victorhg28.github.io/REMS/
 
 # Description:
-Old website for my personal projects
+Website for my audio-dev related things

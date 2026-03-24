@@ -49,7 +49,8 @@ class miHeader extends HTMLElement {
 			</div>
 			<nav class="menu">
 				<ul>
-					<li><a href="index.html">RFLATHEADPHONES</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="RFlatHeadphones.html">RFLATHEADPHONES</a></li>
 					<li><a href="RDistortion.html">RDISTORTION</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 				</ul>

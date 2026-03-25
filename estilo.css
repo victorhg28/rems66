@@ -14,13 +14,21 @@
 	/* margin-bottom: 0px; */
 	width: 100%;
 	
-	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 8px 8px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	/* background: */
+	/* radial-gradient(black 15%, transparent 16%) 0 0, */
+	/* radial-gradient(black 15%, transparent 16%) 8px 8px, */
+	/* radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, */
+	/* radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px; */
 	/* background-color:#282828; */
-	background-color:#000;
+	/* background-color:#111; */
+	
+	
+	/* background-color: #73704c; */
+	/* background-color: color-mix(in srgb, #73704c 30%, black); */
+	/* background-color: color-mix(in srgb, var(--turquesa) 20%, black); */
+	background-color: color-mix(in srgb, #2A1A22 100%, black);
+	
+	/* background-color: color-mix(in srgb, var(--turquesa) 12%, black); */
 	
 	/* background-size:16px 16px; */
 	background-size:8px 8px;
@@ -57,22 +65,20 @@ body{
     /* background-color: var(--turquesa); */
     /* background-color: color-mix(in srgb, var(--turquesa) 12%, black); */
 	
-/* thanks to this: https://css-pattern.com/distorted-mesh/ */
-  --s: 140px; /* control the size*/
-  /* --c1: #170409; */
-  --c1: #1C1C1C; /*color lineas*/
-  /* --c2: #67917a; */
-  /* --c2: color-mix(in srgb, #67917a 5%, black);  */
-  --c2: #1E1E1E;
+/* thanks to this: https://css-pattern.com/irregular-zig-zag/*/
+  --s: 66px; /* control the size*/
+  --c1: #1e1e1e;
+  --c2: #1c1c1c;
   
-  --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
+  --c: var(--c1) 25%;  
   background: 
-   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
-   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
-   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
-   radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
-   var(--c2);
-  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+    conic-gradient(from -45deg at 75% 12.5%,var(--c),#0000 0),
+    conic-gradient(from 135deg at 25% 87.5%,var(--c),#0000 0) 
+     0 calc(var(--s)/2),
+    conic-gradient(from 180deg at 50% 75%,#0000 62.5%,var(--c)),
+    conic-gradient(            at 50% 25%,#0000 62.5%,var(--c)) 
+     0 calc(var(--s)/2) var(--c2);
+  background-size: var(--s) calc(2*var(--s));
 
 	
 	
@@ -103,7 +109,7 @@ main {
   flex: 1;
   
   
-  
+  background-color: #1E1E1E;
     /* padding: 3%; */
     /* color: white; */
 	color: #AAA;

@@ -5,6 +5,7 @@
   --bordeSize: 1px;
   --whiteDarkTheme: #AAA;
   --rosado: #ff0062;
+  --turquesa: #22c1c3;
 }
 
 /* css pattern from here https://projects.verou.me/css3patterns/#tartan */
@@ -52,7 +53,29 @@ html{
 }
 
 body{
-    background-color: #1E1E1E;
+    /* background-color: #1E1E1E; */
+    /* background-color: var(--turquesa); */
+    /* background-color: color-mix(in srgb, var(--turquesa) 12%, black); */
+	
+/* thanks to this: https://css-pattern.com/distorted-mesh/ */
+  --s: 140px; /* control the size*/
+  /* --c1: #170409; */
+  --c1: #1C1C1C; /*color lineas*/
+  /* --c2: #67917a; */
+  /* --c2: color-mix(in srgb, #67917a 5%, black);  */
+  --c2: #1E1E1E;
+  
+  --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
+  background: 
+   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+   radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+   var(--c2);
+  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+
+	
+	
 	/* background-color: #c4a4b0; */
     /*position: relative;*/
 
@@ -105,6 +128,10 @@ footer{
 	text-align: right;
 	/* margin-bottom: 0; */
 	/* overflow: hidden; */
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 40px;
 }
 
 center > a{

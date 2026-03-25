@@ -10,7 +10,8 @@ class miFooter extends HTMLElement {
 		</style>
 		
 		<footer>
-			<img src="imagenes/logo_dev_alpha.png">
+			
+			<img src="iconos/pagina_icono.png" style="filter: grayscale(100%); opacity: 0.15;">
 			
 			<br>
 			

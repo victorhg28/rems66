@@ -11,9 +11,8 @@ class miFooter extends HTMLElement {
 		
 		<footer>
 			
-			<img src="iconos/pagina_icono.png" style="filter: grayscale(100%); opacity: 0.15;">
-			
-			<br>
+			<!-- gap: 2%; -->
+			<div style="display: flex; gap: 2%;">
 			
 			<!--
 			<span style="color: #AB5C7C;">
@@ -21,11 +20,17 @@ class miFooter extends HTMLElement {
 			</span>
 			-->
 			
-			<br>
+				<div style="width: 90%; color: #FFFFFF33; font-family: Courier New;">
+					Victor Morante<br>
+					Lima, Perú<br>
+					--------------
+				</div>
 			
-			<span style="color:gray;">
-				Victor Morante | Lima, Perú
-			</span>
+				<div>
+					<img src="iconos/pagina_icono.png" style="filter: grayscale(100%); opacity: 0.20;">
+				</div>
+			
+			</div>
 		</footer>
 	`;
 	

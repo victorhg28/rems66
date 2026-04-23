@@ -126,7 +126,7 @@ main {
     /* top: 0; */
 /* } */
 footer{
-	background-color: #111;
+	/* background-color: #111; */
 	font-size: 0.9em;
 	bottom: 0;
 	/* min-height: 80px; */
@@ -137,7 +137,22 @@ footer{
 	padding-left: 8px;
 	padding-right: 8px;
 	padding-top: 8px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
+	
+
+
+	/* pattern, thanks to: https://css-pattern.com/diagonal-chevrons/ */
+	--s: 10px; /* control the size*/
+	--c1: #202020;
+	--c2: #232323;
+  
+	background:
+    conic-gradient(var(--c1)   135deg,var(--c2) 0 270deg,
+                   var(--c1) 0 315deg,var(--c2) 0)
+    0/var(--s) var(--s);
+
+
+
 }
 
 center > a{

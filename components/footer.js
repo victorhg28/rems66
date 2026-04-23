@@ -15,14 +15,16 @@ class miFooter extends HTMLElement {
 			
 			<br>
 			
+			<!--
 			<span style="color: #AB5C7C;">
 				♪ ... The tears trickle down wet the earth. Gotta get out now. From the Chamomile bathroom, tonight... ♪
 			</span>
+			-->
 			
 			<br>
 			
 			<span style="color:gray;">
-				Victor Morante | Lima, Perú | victormorante28@gmail.com
+				Victor Morante | Lima, Perú
 			</span>
 		</footer>
 	`;

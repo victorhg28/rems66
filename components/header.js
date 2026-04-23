@@ -6,7 +6,9 @@ class miHeader extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<style>
-			ul {
+			
+			
+			.menu ul {
 				list-style-type: none;
 				padding: 0;
 				overflow: hidden;
@@ -15,11 +17,11 @@ class miHeader extends HTMLElement {
 				margin: auto;
 			}
 	
-			li {
+			.menu li {
 				float: left;
 			}
 
-			li a {
+			.menu li a {
 				display: block;
 				color: #111;
 				text-align: center;
@@ -27,16 +29,16 @@ class miHeader extends HTMLElement {
 				text-decoration: none;
 			}
 
-			li a:hover {
+			.menu li a:hover {
 				background-color: #111;
 			}
 	
-			li a.active {
+			.menu li a.active {
 				background-color: #1E1E1E;
 				color: var(--whiteDarkTheme);
 			}
 			
-			h1 a, a.active{
+			.menu a.active{
 				text-decoration: none;
 				color: black;
 				background-color: transparent;

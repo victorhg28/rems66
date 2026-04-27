@@ -31,6 +31,7 @@ class miHeader extends HTMLElement {
 
 			.menu li a:hover {
 				background-color: #111;
+				color: white;
 			}
 	
 			.menu li a.active {
@@ -47,7 +48,7 @@ class miHeader extends HTMLElement {
 		
 		<header>
 			<div class="cabecera">
-				<h1 style="font-size: 40px;"><a href="index.html">REMS</a></h1>
+				<h1 style="font-size: 40px;"><a href="index.html">rems66</a></h1>
 			</div>
 			<nav class="menu">
 				<ul>

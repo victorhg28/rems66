@@ -6,6 +6,7 @@
   --whiteDarkTheme: #AAA;
   --rosado: #ff0062;
   --turquesa: #22c1c3;
+  --n_rosaOpaco: #C98577;
 }
 
 /* css pattern from here https://projects.verou.me/css3patterns/#tartan */
@@ -269,3 +270,76 @@ h1 a{
     /* background-color: #1E1E1E; */
 /* } */
 
+
+
+
+/* hover underline*/
+/* thanks to this awesome website!: https://prismic.io/blog/css-hover-effects */
+
+.hover-underline {
+	/* font-size: 2rem; */
+	/* color: #ffffff; */
+	position: relative;
+	display: inline-block;
+}
+.hover-underline::after,
+.hover-underline::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	/* background: linear-gradient(to right, #ff0000, #00000044); */
+	background: linear-gradient(to right, var(--n_rosaOpaco), #00000044);
+	bottom: -5px;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.4s ease-out;
+}
+.hover-underline::before {
+	top: -5px;
+	transform-origin: left;
+}
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+	transform: scaleX(1);
+}
+
+
+
+/* contenedor para "latest" de index */
+.contenedor-latest{
+
+	background-color: #131313;
+	
+	/* margin-top:10px; */
+	margin-top: 0;
+	margin-bottom:20px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px 10px; /*vertical horizontal*/
+	
+	box-shadow: 10px 10px 0 black;
+	/* box-shadow: 7px 7px 10px black inset, -7px -7px 10px black inset; */
+}
+
+.contenedor-latest-titulo{
+
+	background-color: #131313;
+	
+	margin-top:10px;
+	/* margin-bottom:5px; */
+	margin-bottom: 0;
+	margin-left: 15%;
+	padding: 8px 10px;
+	/* margin-right: 15%; */
+	/*padding: 10px 10px;*/ /*vertical horizontal*/
+	
+	display: inline-block;
+
+}
+
+/* .contenedor-latest:hover{ 
+	box-shadow: 20px 20px 50px 10px pink inset;
+	border:3px solid #FF0000;
+}*/

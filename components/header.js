@@ -55,7 +55,7 @@ class miHeader extends HTMLElement {
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="RFlatHeadphones.html">RFLATHEADPHONES</a></li>
 					<li><a href="RDistortion.html">RDISTORTION</a></li>
-					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>

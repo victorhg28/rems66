@@ -8,6 +8,15 @@
   --turquesa: #22c1c3;
   --n_rosaOpaco: #C98577;
   --new01: #362524;
+  
+  
+  /* Color #1 - celesteTurq*/
+  /* --new02: #468F82; */
+  /* --new02: #485955; */
+  --new02: #484E59;
+  /* Color #2 - morado*/
+  --new03: #4A3157; 
+  
 }
 
 *{
@@ -104,8 +113,10 @@ h1 { /* para el titulo de la pagina (rems66) */
 /* h1 a.active, a:visited{ */
 h1 a{
 	text-decoration: none;
-	color: black;
+	color: #111;
 	background-color: transparent;
+	/* text-shadow: 0px 0px 5px #FFFFFF44; */
+	text-shadow: 0px 0px 5px #00000044;
 }
 
 /*---------------------------*/
@@ -120,7 +131,7 @@ h1 a{
     top: 0;
 	
 	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); */
-	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.7);
 	
 	min-height: 80px;
 	/* min-height: 2em; */
@@ -131,9 +142,10 @@ h1 a{
     /*box-shadow: 5px 5px 11px black;*/
 	
 	/* de aquí: https://www.magicpattern.design/tools/css-backgrounds */
-	background-color: #ff0062;
+	/* background-color: #ff0062; */
+	background-color: var(--new02)
 	opacity: 1;
-	background: radial-gradient(circle, transparent 20%, #ff0062 20%, #ff0062 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ff0062 20%, #ff0062 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#000000 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #000000 2px, #ff0062 2px) -1px 0;
+	background: radial-gradient(circle, transparent 20%, var(--new02) 20%, var(--new02) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--new02) 20%, var(--new02) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#000000 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #000000 2px, var(--new02) 2px) -1px 0;
 	background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
@@ -152,10 +164,15 @@ h1 a{
 }
 
 .menu{
-    background: rgb(34,193,195);
+    background: var(--new03);
 	/* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,94,1) 100%); */
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,94,1) 120%);
-	outline: var(--bordeSize) solid var(--bordeColor);
+    background: linear-gradient(0deg, var(--new03) 0%, var(--new02) 120%);
+
+	/* outline: var(--bordeSize) solid var(--bordeColor); */
+	border-top: var(--bordeSize) solid var(--bordeColor);
+    border-left: var(--bordeSize) solid var(--bordeColor);
+    border-right: var(--bordeSize) solid var(--bordeColor);
+	
 	position: relative;
 }
 

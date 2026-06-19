@@ -28,7 +28,8 @@ class miFooter extends HTMLElement {
 			
 				<div>
 					<!-- <img src="iconos/pagina_icono.png" style="filter: grayscale(100%); opacity: 0.20;"> -->
-					<img src="iconos/dither_logo.png" width=50px style="opacity: 0.20;">
+					<!-- <img src="iconos/dither_logo.png" width=50px style="opacity: 0.20;"> -->
+					<img src="iconos/dither_logo.png" width=50px style="opacity: 0.90;">
 				</div>
 			
 			</div>

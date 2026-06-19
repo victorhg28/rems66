@@ -9,15 +9,50 @@
   --n_rosaOpaco: #C98577;
   --new01: #362524;
   
+  --black01: #111;
+  --black02: #333;
+  
   
   /* Color #1 - celesteTurq*/
   /* --new02: #468F82; */
-  /* --new02: #485955; */
-  --new02: #484E59;
+  --new02: #485955;
+  /* --new02: #484E59; */
+  /* --new02: #704455; */
+  /* --new02: #5B1025; */
+  
   /* Color #2 - morado*/
-  --new03: #4A3157; 
+  /* --new03: #4A3157;  */
+  /* --new03: #A4A88A; */
+  /* --new03: #7D7947; */
+  --new03: #462A32;
   
 }
+
+
+.botonDescarga:link, .botonDescarga:visited {
+	display: flex;
+	
+	/* vertical centering */
+    align-items: center;      
+	/* horizontal centering */
+    justify-content: center;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 80%;
+
+    height: 50px;
+    background-color: var(--black01);
+    color: white;
+    text-decoration: none;
+	margin-top: 10px;
+}
+
+.botonDescarga:hover, .botonDescarga:active {
+  background-color: var(--black02);
+}
+
 
 *{
     font-family:sans-serif;
@@ -71,14 +106,11 @@ main {
 	padding: 20px;
 }
 
+
 footer{
 	font-size: 0.9em;
 	bottom: 0;
-	/* min-height: 80px; */
-	/* min-height: 80%; */
 	text-align: right;
-	/* margin-bottom: 0; */
-	/* overflow: hidden; */
 	padding-left: 8px;
 	padding-right: 8px;
 	padding-top: 8px;
@@ -86,16 +118,36 @@ footer{
 	
 	/* pattern, thanks to: https://css-pattern.com/diagonal-chevrons/ */
 	--s: 10px; /* control the size*/
-	/* --c1: #202020; */
-	--c1: #0A0A0A;
-	/* --c2: #232323; */
-	--c2: #000;
+	/* --c1: #0A0A0A; */
+	/* --c2: #000; */
+	
+	
+	/* --c1: color-mix(in srgb, var(--new03) 78%, black); */
+	/* --c2: var(--new03); */
+	/* --c2: color-mix(in srgb, var(--new03) 70%, black); */
+	/*
+	--c1: color-mix(
+		in srgb,
+		black 75%,
+		white
+	);
+	--c2: color-mix(
+		in srgb,
+		black 70%,
+		white
+	);
+	*/
   
+	/*
 	background:
     conic-gradient(var(--c1)   135deg,var(--c2) 0 270deg,
                    var(--c1) 0 315deg,var(--c2) 0)
     0/var(--s) var(--s);
+	*/
+	
+	background-color: black;
 }
+
 
 center > a{
     text-decoration: none;
@@ -114,9 +166,11 @@ h1 { /* para el titulo de la pagina (rems66) */
 h1 a{
 	text-decoration: none;
 	color: #111;
+	/* color: white; */
 	background-color: transparent;
 	/* text-shadow: 0px 0px 5px #FFFFFF44; */
 	text-shadow: 0px 0px 5px #00000044;
+	/* text-shadow: 0px 0px 2px white; */
 }
 
 /*---------------------------*/

@@ -24,7 +24,11 @@
   /* --new03: #4A3157;  */
   /* --new03: #A4A88A; */
   /* --new03: #7D7947; */
-  --new03: #462A32;
+  /* --new03: #462A32; */
+  /* --new03: #5C5955; */
+  --new03: #4C4A46;
+  
+  /* --new03: #614A46; */
   
 }
 
@@ -117,7 +121,7 @@ footer{
 	padding-bottom: 30px;
 	
 	/* pattern, thanks to: https://css-pattern.com/diagonal-chevrons/ */
-	--s: 10px; /* control the size*/
+	/* --s: 10px;  control the size */
 	/* --c1: #0A0A0A; */
 	/* --c2: #000; */
 	
@@ -145,7 +149,7 @@ footer{
     0/var(--s) var(--s);
 	*/
 	
-	background-color: black;
+	/* background-color: black; */
 }
 
 
